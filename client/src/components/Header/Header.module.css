@@ -1,0 +1,59 @@
+.header {
+	height: 65px;
+	background-color: #333335;
+	box-shadow: 0 1px 2px rgb(19, 19, 19);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 35px;
+}
+
+.headerContainer {
+	width: 1040px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 0 15px;
+}
+
+.headerContainer h1 {
+	font-size: 32px;
+	color: #d42f2f;
+	font-family: "Cinzel Decorative", cursive;
+	word-spacing: 3px;
+	font-weight: 700;
+}
+
+.headerContainer h1:active {
+	transform: translateY(1px);
+}
+
+.cartContainer {
+	display: flex;
+	align-items: center;
+}
+
+.totalPrice {
+	margin-right: 15px;
+	background-color: #9d2e2e;
+	padding: 8px 15px;
+	border-radius: 8px;
+	position: relative;
+	top: 1px;
+	font-size: 18px;
+}
+
+.cart {
+	background: url("../../img/icons/cart.svg") 0 0 / 20px 20px no-repeat;
+	padding: 0 0 0 30px;
+	text-decoration: underline 2px rgba(0, 0, 0, 0);
+	text-underline-offset: 6px;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.cart:hover {
+	text-decoration-color: rgba(255, 255, 255, 1);
+}

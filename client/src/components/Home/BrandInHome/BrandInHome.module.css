@@ -1,0 +1,31 @@
+.storeMain {
+	background-color: #333335;
+	margin: 0 0 30px 0;
+	padding: 10px 30px;
+	border-radius: 8px;
+	text-align: center;
+	border: 1px solid #535359;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	height: 120px;
+	font-family: Roboto, sans-serif;
+	color: #fff;
+}
+
+.storeMain:hover {
+	background-color: #9d2e2e;
+	border: 1px solid #9d2e2e;
+}
+
+.storeMain img {
+	width: 70px;
+}
+
+.storeMain .title {
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: 500;
+}

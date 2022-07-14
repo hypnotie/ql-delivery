@@ -1,0 +1,86 @@
+.formTitle {
+	font-size: 20px;
+	margin: 0 0 30px;
+	padding: 0 0 0 35px;
+	background: url("../../img/icons/order-details.svg") 5px 0 / contain no-repeat;
+}
+
+.form {
+	display: flex;
+	margin: 25px 0 0;
+}
+
+
+.formRight {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin-left: 100px;
+}
+
+.formRight input {
+	background-color: #333335;
+	padding: 10px 12px;
+	border-radius: 8px;
+	transition: all 0.2s ease;
+	color: #fff;
+	border: 1px solid #333335;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+}
+
+.formRight input:focus {
+	outline: none;
+	border: 1px solid #535359;
+}
+
+.formRight input:not(:last-child) {
+	margin: 0 0 15px;
+}
+
+.totalPrice {
+	margin: 25px auto 0;
+	font-size: 20px;
+}
+
+.line {
+	height: 1px;
+	background-color: #535359;
+	margin: 20px 25px;
+}
+
+.formBottom {
+	margin: 0 auto;
+}
+
+.formRight button {
+	font-family: "Cinzel Decorative", cursive;
+	font-size: 26px;
+	background: transparent;
+	color: #d42f2f;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.formRight button:hover {
+	color: #fff;
+}
+
+.thankYou,
+.emptyCart {
+	font-family: "Cinzel Decorative", cursive;
+	text-align: center;
+	border-radius: 8px;
+	margin: 250px auto 0;
+	border: 1px solid #535359;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.thankYou {
+	width: 360px;
+}
+
+.emptyCart {
+	width: 210px;
+}

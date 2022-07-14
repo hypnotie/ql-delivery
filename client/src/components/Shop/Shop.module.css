@@ -1,0 +1,28 @@
+.title {
+	font-size: 20px;
+	margin: 0 0 30px;
+	padding: 0 0 0 35px;
+	background: url("../../img/icons/shop.svg") 5px 0 / contain no-repeat;
+}
+
+.shop {
+	display: flex;
+}
+
+.brandsPanel {
+	width: 100%;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	flex: 1 0 auto;
+	padding-left: 13px;
+}
+
+/* .products::after {
+	content: "";
+	flex: auto;
+} */
+

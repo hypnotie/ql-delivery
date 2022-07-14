@@ -1,0 +1,86 @@
+.product {
+	display: flex;
+	margin: 0 0 20px 0;
+	height: 120px;
+}
+
+.productDescription {
+	background-color: #333335;
+	width: 250px;
+	border-radius: 0 8px 8px 0;
+	border: 1px solid #535359;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.productImage {
+	position: relative;
+	width: 160px;
+	border-radius: 8px 0 0 8px;
+	border: 1px solid #535359;
+	object-fit: contain;
+	background-color: #fff;	
+}
+
+.productTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex: 1 0 auto;
+}
+
+.productTop button {
+	background: transparent;
+	cursor: pointer;
+	line-height: 0.8;
+	padding: 3px;
+	position: relative;
+	bottom: 3px;
+	left: 3px;
+}
+
+.productTitle {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.removeProductIcon {
+	width: 10px;
+}
+
+.productBottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.productBottom input[type=number] {
+	background-color: #9d2e2e;
+	width: 60px;
+	color: #fff;
+	border-radius: 6px;
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	padding: 0 0 0 5px;
+	caret-color: transparent;
+	cursor: default;
+	user-select: text; 
+}
+
+.productBottom input[type=number]:focus {
+	outline: none;
+}
+
+.productBottom input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.productBottom input[type=number]::selection {
+	background: #9d2e2e;
+}
+
+.productPrice {
+	font-size: 20px;
+}

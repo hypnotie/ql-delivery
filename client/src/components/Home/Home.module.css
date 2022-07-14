@@ -1,0 +1,16 @@
+.shop {
+	height: 100%;
+}
+
+.storesTitle {
+	font-size: 20px;
+	margin: 0 0 30px;
+	padding: 0 0 0 35px;
+	background: url("../../img/icons/shop.svg") 5px 0 / contain no-repeat;
+}
+
+.shops {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

@@ -1,0 +1,98 @@
+@keyframes ani {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	background-color: #333335;
+	width: 230px;
+	height: 285px;
+	margin: 0 0 35px 35px;
+	border-radius: 8px;
+	border: 1px solid #535359;
+	animation: ani 0.5s forwards;
+}
+
+.product img {
+	position: relative;
+	width: 100%;
+	height: 170px;
+	border-radius: 8px 8px 0 0;
+	object-fit: contain;
+	background-color: #fff;
+}
+
+.productTitle {
+	padding: 15px;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.productBottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+
+.productPrice {
+	font-size: 20px;
+}
+
+.addToCart {
+	padding: 9px 13px;
+	background-color: #9d2e2e;
+	border-radius: 8px;
+	font-size: 14px;
+	cursor: pointer;
+	line-height: 1;
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	transition: all 0.1s ease;
+}
+
+.addToCart:active {
+	background-color: #882828;
+}
+
+.modal {
+	display: flex;
+	flex-direction: column;
+}
+
+.modalLabel {
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.modalButtons {
+	align-self: flex-end;
+}
+
+.modalButtons button {
+	border-radius: 8px;
+	font-size: 14px;
+	cursor: pointer;
+	line-height: 1;
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	transition: all 0.1s ease;
+	padding: 9px 20px;
+}
+
+.buttonYes {
+	margin-right: 15px;
+	background-color: #9d2e2e;
+	border: 1px solid #9d2e2e;
+}
+
+.buttonCancel {
+	background-color: #333335;
+	border: 1px solid #535359;
+}
