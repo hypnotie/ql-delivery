@@ -32,4 +32,4 @@ CREATE TABLE IF NOT EXISTS order_items
     quantity integer NOT NULL
 );
 
-insert into shops (name) values ('mac');
+insert into shops (name, logo) values ('McDonald’s', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/800px-McDonald%27s_Golden_Arches.svg.png');
