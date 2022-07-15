@@ -43,3 +43,13 @@ VALUES
 ('Sushiya', 'https://i.imgur.com/5aXABnx.png'),
 ('Papa John’s', 'https://i.imgur.com/Y1JKJZu.png'),
 ('Mister Cat', 'https://img.postershop.me/10900/Config/268261_1651117741.9328_original.png');
+
+INSERT INTO products (shop_id, name, price, image)
+VALUES
+(1, 'Cheeseburger', 1.09, 'https://i.imgur.com/1PtuQLj.jpg'),
+(1, 'Double Cheeseburger', 1.49, 'https://i.imgur.com/UGj3XJy.jpg'),
+(1, 'Royal Cheeseburger', 1.89, 'https://i.imgur.com/nDtPymF.jpg'),
+(1, 'McChicken', 1.59, 'https://i.imgur.com/pUjiAMU.jpg'),
+(1, 'Big Mac', 1.89, 'https://i.imgur.com/Xtq6MAR.jpg'),
+(1, 'Filet-O-Fish', 2.19, 'https://i.imgur.com/PF5HiPM.jpg'),
+(1, 'French Fries', 1.79, 'https://i.imgur.com/HeLBxr2.jpg');

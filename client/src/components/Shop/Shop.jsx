@@ -31,7 +31,7 @@ const Shop = (props) => {
 					{brandsElements}
 				</div>
 				<div className={styles.products}>
-					{productsElements}
+					{!props.isFetching && productsElements}
 				</div>
 			</div>
 		</div>
