@@ -17,7 +17,7 @@ export const homeAPI = {
       },
     });
     return response.json();
-  },
+  }
 };
 
 export const cartAPI = {
@@ -30,5 +30,5 @@ export const cartAPI = {
       body: JSON.stringify(order),
     });
     return response.json();
-  },
+  }
 };

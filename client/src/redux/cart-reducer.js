@@ -32,7 +32,7 @@ const cartReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case ADD_PRODUCT_TO_CART:
 			let updatedProductsInCart = [];
-			let item = state.productsInCart.find((e) => (e.id === action.payload.id));
+			let item = state.productsInCart.find((e) => (e.id === action.product.id));
 			if (item) {
 				updatedProductsInCart = state.productsInCart.map(e => {
 					if (e.id === item.id) {
@@ -41,7 +41,7 @@ const cartReducer = (state = initialState, action) => {
 					return e;
 				});
 			} else {
-				updatedProductsInCart = [...state.productsInCart, action.payload];
+				updatedProductsInCart = [...state.productsInCart, action.product];
 			}
 			localStorage.setItem("cart", JSON.stringify(updatedProductsInCart));
 
@@ -50,6 +50,7 @@ const cartReducer = (state = initialState, action) => {
 				productsInCart: [...updatedProductsInCart],
 				totalPrice: calculateTotal(updatedProductsInCart)
 			}
+
 		case REMOVE_PRODUCT_FROM_CART:
 			let newCart = [...state.productsInCart].filter(product => product.id !== action.id);
 			localStorage.setItem("cart", JSON.stringify(newCart));
@@ -59,6 +60,7 @@ const cartReducer = (state = initialState, action) => {
 				productsInCart: [...newCart],
 				totalPrice: calculateTotal(newCart)
 			}
+
 		case DECREASE_PRODUCT_QUANTITY:
 			let cartAfterQuantityDecrease = [...state.productsInCart].map(product => {
 				if (product.id === action.productId) {
@@ -66,7 +68,6 @@ const cartReducer = (state = initialState, action) => {
 				}
 				return product;
 			});
-
 			localStorage.setItem("cart", JSON.stringify(cartAfterQuantityDecrease));
 
 			return {
@@ -74,14 +75,16 @@ const cartReducer = (state = initialState, action) => {
 				productsInCart: [...cartAfterQuantityDecrease],
 				totalPrice: calculateTotal(cartAfterQuantityDecrease)
 			}
+
 		case UPDATE_ORDER:
 			return {
 				...state,
 				order: {
 					...state.order,
-					[action.payload.field]: action.payload.value
+					[action.order.field]: action.order.value
 				}
 			}
+
 		case CLEAR_LOCAL_STORAGE:
 			localStorage.clear();
 			let emptyCart = [];
@@ -91,14 +94,15 @@ const cartReducer = (state = initialState, action) => {
 				productsInCart: [...emptyCart],
 				totalPrice: 0
 			}
+
 		default:
 			return state;
 	}
 };
 
-export const addProductToCart = (payload) => ({
+export const addProductToCart = (product) => ({
 	type: ADD_PRODUCT_TO_CART,
-	payload
+	product
 });
 
 export const decreaseProductQuantity = (productId) => ({
@@ -111,9 +115,9 @@ export const removeProductFromCart = (id) => ({
 	id
 });
 
-export const updateOrder = (payload) => ({
+export const updateOrder = (order) => ({
 	type: UPDATE_ORDER,
-	payload
+	order
 });
 
 export const clearLocalStorage = () => ({

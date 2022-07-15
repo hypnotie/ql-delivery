@@ -35,12 +35,13 @@ body {
 html { 
 	overflow-y: overlay;
 }
+
+/* -------------------------        ZEROING END       ------------------------- */
+
 body {
 	min-width: 1070px;
 	background-color: #222126;
 }
-
-/* -------------------------        ZEROING END       ------------------------- */
 
 .container {
 	width: 1040px;

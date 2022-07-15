@@ -18,7 +18,7 @@ const Header = (props) => {
 			</div>
 		</header>
 	);
-}
+};
 
 const mapStateToProps = (state) => ({
 	totalPrice: state.cartPage.totalPrice

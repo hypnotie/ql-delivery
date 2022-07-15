@@ -29,5 +29,6 @@ const QLDeliveryApp = () => {
 			</Provider>
 		</BrowserRouter>
 	);
-}
+};
+
 export default QLDeliveryApp;
