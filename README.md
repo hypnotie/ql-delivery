@@ -15,4 +15,5 @@ docker-compose up -d
 ```  
 
 Visit the application by going to this URL:  
+  
 `localhost:3050`
