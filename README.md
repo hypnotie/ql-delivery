@@ -9,7 +9,7 @@ Clone down this repository:
 git clone https://github.com/hypnotie/ql-delivery.git
 ```  
 
-Go to `docker.env` directory:  
+Go to the docker environment directory:  
 ```
 cd ql-delivery/docker.env
 ```  
