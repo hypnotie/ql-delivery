@@ -9,7 +9,12 @@ Clone down this repository:
 git clone https://github.com/hypnotie/ql-delivery.git
 ```  
 
-Go to `docker.env` folder and run the application:  
+Go to `docker.env` directory:  
+```
+cd ql-delivery/docker.env
+```  
+
+Run the application:  
 ```
 docker-compose up -d
 ```  
