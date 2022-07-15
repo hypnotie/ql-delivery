@@ -39,7 +39,7 @@ VALUES
 ('Baskin Robbins', 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baskin-Robbins_logo.svg/1024px-Baskin-Robbins_logo.svg.png'),
 ('Domino’s Pizza', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/2036px-Domino%27s_pizza_logo.svg.png'),
 ('KFC', 'https://i.imgur.com/iGTdJmn.png'),
-('Papa John’s', 'https://i.imgur.com/Y1JKJZu.png'),
+('Papa John’s', 'https://i.imgur.com/Y1JKJZu.png');
 
 INSERT INTO products (shop_id, name, price, image)
 VALUES
