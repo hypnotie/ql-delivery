@@ -1,6 +1,6 @@
 # QL Delivery
 
-Web application where users can order food delivery
+Web application where users can order food delivery.
 
 ## Installation and Setup Instructions
 
