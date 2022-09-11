@@ -22,3 +22,9 @@ docker-compose up -d
 Visit the application by going to this URL:  
   
 `localhost:3050`
+
+## Application link
+
+The app is located at:  
+
+http://188.166.110.105:3050
