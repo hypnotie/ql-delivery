@@ -1,4 +1,4 @@
-# 🚚 QL Delivery
+# ⚡️ QL Delivery
 
 Web application where users can order food delivery.
 
